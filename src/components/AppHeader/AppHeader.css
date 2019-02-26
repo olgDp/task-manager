@@ -1,0 +1,19 @@
+.AppHeader {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+h1 {
+  margin: 0;
+  margin-bottom: 8px;
+  font-family: "Baloo Paaji", cursive;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 48px;
+  color: #0ebef5;
+}
+
+.AppHeader > span {
+  color: #a0a0a0;
+  font-weight: 300;
+}

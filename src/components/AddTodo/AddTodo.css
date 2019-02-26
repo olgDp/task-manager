@@ -1,0 +1,44 @@
+.AddTodo > input {
+  background: #ffffff;
+  box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  width: 100%;
+  z-index: 1;
+  padding: 20px 32px;
+  padding-right: 160px;
+  border: 0;
+  transition: box-shadow 0.4s;
+}
+
+.AddTodo > input::placeholder {
+  color: #ccc;
+  font-weight: 300;
+}
+
+.AddTodo > input:focus {
+  outline: 0;
+  box-shadow: inset 0px 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.AddTodo > button {
+  position: absolute;
+  right: 32px;
+  bottom: 48px;
+  z-index: 2;
+  background: #0ebef5;
+  border-radius: 50px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 800;
+  padding: 20px 48px;
+  border: 0;
+  transition: background 0.4s;
+}
+.AddTodo > button:hover {
+  cursor: pointer;
+  background: #2a95e1;
+}
+
+.AddTodo > button:focus {
+  outline: 0;
+}

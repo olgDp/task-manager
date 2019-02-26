@@ -1,0 +1,36 @@
+.Filter {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.Filter > .btn {
+  font-size: 24px;
+  border: 0;
+  cursor: pointer;
+  background: transparent;
+  color: #ccc;
+  text-decoration: none;
+}
+
+.Filter > .btn:hover {
+  color: #0ebef5;
+}
+
+.Filter > .btn:focus {
+  outline: 0;
+}
+
+.Filter > .btn.active {
+  color: #0ebef5;
+}
+
+.active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: #0ebef5;
+  margin-top: 4px;
+}

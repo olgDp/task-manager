@@ -1,0 +1,72 @@
+.TodoListItem {
+  display: flex;
+  justify-content: space-between;
+  line-height: 1;
+}
+
+.TodoItemForm {
+  display: flex;
+  justify-content: space-between;
+}
+
+.TodoItemForm button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+.TodoItemForm input {
+  border: 0;
+  flex-grow: 1;
+  margin-right: 16px;
+}
+
+.TodoItemForm input:focus {
+  outline: 0;
+}
+
+.TodoItemForm input::placeholder {
+  color: #a0a0a0;
+  font-weight: 300;
+}
+
+.TodoListItem span {
+  cursor: pointer;
+}
+
+.TodoListItem .icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.TodoListItem .svgIcon {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.TodoListItem:hover .svgIcon {
+  opacity: 0.5;
+}
+
+.TodoListItem .svgIcon:hover {
+  opacity: 1;
+}
+
+.TodoListItem .svgIcon:not(:last-child) {
+  margin-right: 12px;
+}
+
+.done {
+  color: #ccc;
+  text-decoration: line-through;
+}
+
+.important {
+  font-weight: 700;
+  color: #0ebef5;
+}
